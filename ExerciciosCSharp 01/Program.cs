@@ -9,7 +9,7 @@ namespace ExerciciosCSharp_01
         {
             try
             {
-                Console.WriteLine("Escolha o exercício de 1 a 10: ");
+                Console.WriteLine("Escolha o exercício de 1 a 12: ");
                 var opcao = Console.ReadLine();
 
                 switch (opcao)
@@ -54,6 +54,14 @@ namespace ExerciciosCSharp_01
                         Console.Clear();
                         Exercicio10 exercicio10 = new Exercicio10();
                         break;
+                    case "11":
+                        Console.Clear();
+                        Exercicio11 exercicio11 = new Exercicio11();
+                        break;
+                    case "12":
+                        Console.Clear();
+                        Exercicio12 exercicio12 = new Exercicio12();
+                        break;
                     default:
                         Console.WriteLine("Comando não reconhecido...");
                         break;
@@ -61,7 +69,7 @@ namespace ExerciciosCSharp_01
             }
             catch(Exception e)
             {
-                Console.WriteLine($"Um erro aconteceu: {e.Message}");
+                Console.WriteLine($"Um erro aconteceu: {e.Message}\n\n{e.StackTrace}");
             }
             finally
             {
